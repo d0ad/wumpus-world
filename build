@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+export CLASSPATH=jade/lib/jade.jar:jade/lib/commons-codec/commons-codec-1.3.jar:out:.
+
+alias javac=~/.jdks/openjdk-19.0.1/bin/javac
+
+javac --release 17 -d out *.java

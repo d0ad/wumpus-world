@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export CLASSPATH=jade/lib/jade.jar:jade/lib/commons-codec/commons-codec-1.3.jar:out:.
+
+java -cp $CLASSPATH jade.Boot -gui -agents "environment:wumpusworld.EnvironmentAgent;navigator:wumpusworld.NavigatorAgent;speleologist:wumpusworld.SpeleologistAgent"
